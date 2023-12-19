@@ -16,7 +16,7 @@ def index():
 def health():
     log.info("Checking /health")
     db = get_db()
-    health = "BAD"
+    health = "Problem"
     try:
         result = db.execute("SELECT NOW()")
         result = result.one()
