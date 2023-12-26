@@ -9,7 +9,7 @@ app.teardown_appcontext(close_db)
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return 'Hello'
 
 
 @app.route("/health")
